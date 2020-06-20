@@ -19,6 +19,10 @@ git config --global --unset https.proxy
 
 Edit the shortcut path
 ```console
-"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --proxy-server="socks5://127.0.0.1:8080" --incognito
+chrome.exe --proxy-server="socks5://127.0.0.1:8080" --incognito
 ```
 
+## VS Code via socks5
+```console
+Code.exe --proxy-server=socks5://127.0.0.1:8080
+```
