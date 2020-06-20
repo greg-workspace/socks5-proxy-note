@@ -17,7 +17,7 @@ git config --global --unset https.proxy
 
 ## Chrome via socks5
 
-Edit the short cut path
+Edit the shortcut path
 ```console
 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --proxy-server="socks5://127.0.0.1:8080" --incognito
 ```
