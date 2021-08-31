@@ -26,3 +26,11 @@ chrome.exe --proxy-server="socks5://127.0.0.1:8080" --incognito
 ```console
 Code.exe --proxy-server=socks5://127.0.0.1:8080
 ```
+
+## http Local tunnel for apt-get
+```console
+$ ssh -vNL 8080:us.archive.ubuntu.com:80 test@internet-accessible.com
+$ cat /etc/apt/apt.conf.d/apt_workaround
+Acquire::http::Proxy "http://localhost:8080/";
+Acquire::https::Proxy "http://localhost:8080/";
+```
